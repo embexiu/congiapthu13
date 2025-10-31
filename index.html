@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tình yêu của con giáp 13</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* --- SỬA LỖI CUỘN NGANG (THÊM MỚI) --- */
+        * {
+            box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước */
+        }
+        /* ------------------------------------- */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ffdee9, #ffcad4);
+            
+            /* --- SỬA LỖI CUỘN NGANG (THÊM MỚI) --- */
+            /* Triệt để ẩn thanh cuộn ngang */
+            overflow-x: hidden; 
+            /* ------------------------------------- */
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #d6336c;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+
+            /* --- SỬA LỖI CUỘN NGANG (THÊM MỚI) --- */
+            max-width: 100%; /* Đảm bảo tiêu đề không bao giờ tràn */
+            /* ------------------------------------- */
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2em;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Cho phép xuống hàng trên điện thoại */
+            justify-content: center;
+            gap: 30px; /* Khoảng cách giữa 2 thẻ */
+            margin-top: 30px;
+            max-width: 100%; /* Đảm bảo container không tràn */
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px 40px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            min-width: 250px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card .hearts {
+            font-size: 0.8em;
+            color: #e64980;
+            margin-top: 15px;
+            display: block;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tình yêu của con giáp 13</h1>
+    <h2>Ai là người được chọn?</h2>
+
+    <div class="container">
+        <a href="le-khanh.html" class="card">
+            <span>Lê Khánh</span>
+            <span class="hearts">❤️ ❤️ ❤️</span>
+        </a>
+
+        <a href="khuong.html" class="card">
+            <span>Võ Duy Khương</span>
+            <span class="hearts">❤️ ❤️ ❤️</span>
+        </a>
+    </div>
+
+</body>
+</html>
