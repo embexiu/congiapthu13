@@ -21,43 +21,28 @@
             /* Chống cuộn ngang */
         }
 
-        h1,
-        h2 {
+        h1 {
             text-align: center;
             width: 100%;
-        }
-
-        /* Tiêu đề chính */
-        h1 {
             font-family: 'Pacifico', cursive;
             color: #d6336c;
             font-size: 2.5em;
-            margin-bottom: 0;
+            margin-bottom: 20px;
+            /* Thêm khoảng cách dưới tiêu đề chính */
         }
 
-        /* Tiêu đề phụ (tên) */
-        h2 {
-            color: #333;
-            font-size: 1.8em;
-            margin-top: 40px;
-            /* Khoảng cách giữa 2 ảnh */
-            margin-bottom: 15px;
-            border-top: 2px solid rgba(0, 0, 0, 0.1);
-            padding-top: 30px;
-        }
-
-        /* --- CSS CHO ẢNH RESPONSIVE --- */
-        .responsive-image {
+        /* --- CSS CHO ẢNH & VIDEO RESPONSIVE --- */
+        .responsive-media {
             display: block;
             width: 100%;
             /* Luôn vừa chiều rộng màn hình */
             max-width: 800px;
             /* Giới hạn độ rộng trên laptop */
             height: auto;
-            /* Giữ đúng tỷ lệ ảnh */
+            /* Giữ đúng tỷ lệ ảnh/video */
 
             margin: 0 auto 15px auto;
-            /* Căn giữa ảnh và thêm khoảng cách dưới */
+            /* Căn giữa và thêm khoảng cách dưới */
             border: 3px solid white;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -68,22 +53,22 @@
 <body>
 
     <h1>Tình yêu của con giáp 13</h1>
-    <h2>Ai là người được chọn?</h2>
+    <h1>Ai là người được chọn</h1>
 
-    <h2>Lê Khánh</h2>
-    <img src="Con-giáp-thứ-MƯỜI-BA.jpg" alt="Nội dung chat 1" class="responsive-image">
+    <img src="4.jpg" alt="Hình ảnh 4" class="responsive-media">
+    <img src="5.jpg" alt="Hình ảnh 5" class="responsive-media">
+    <img src="3.png" alt="Hình ảnh 3" class="responsive-media">
+    <img src="6.jpg" alt="Hình ảnh 6" class="responsive-media">
+    <img src="Con-giáp-thứ-MƯỜI-BA.jpg" alt="Nội dung chat 1" class="responsive-media">
 
-    <h2>Võ Duy Khương</h2>
-    <img src="Võ Duy Khương.jpg" alt="Nội dung chat 2" class="responsive-image">
+    <video src="congiap.mp4" class="responsive-media" controls>
+        Trình duyệt của bạn không hỗ trợ phát video này.
+    </video>
 
-    <h2>Hình ảnh liên quan</h2>
+    <img src="2.jpg" alt="Hình ảnh 2" class="responsive-media">
+    <img src="Võ Duy Khương.jpg" alt="Nội dung chat 2" class="responsive-media">
+    <img src="1.jpg" alt="Hình ảnh 1" class="responsive-media">
 
-    <img src="1.jpg" alt="Hình ảnh 1" class="responsive-image">
-    <img src="2.jpg" alt="Hình ảnh 2" class="responsive-image">
-    <img src="3.png" alt="Hình ảnh 3" class="responsive-image">
-    <img src="4.jpg" alt="Hình ảnh 4" class="responsive-image">
-    <img src="5.jpg" alt="Hình ảnh 5" class="responsive-image">
-    <img src="6.jpg" alt="Hình ảnh 6" class="responsive-image">
 </body>
 
 </html>
